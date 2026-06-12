@@ -31,36 +31,13 @@ registration:
     - "openid"
 
 mcpServers:
-  Time:
+  time:
     type: stdio
     command: uvx
     args:
       - mcp-server-time
     startup: false
 
-  Context7:
-    type: stdio
-    command: npx
-    args:
-      - -y
-      - @upstash/context7-mcp@latest
-    startup: false
-
-  Playwright:
-    type: stdio
-    command: npx
-    args:
-      - -y
-      - @playwright/mcp@latest
-    startup: false
-
-  Puppeteer:
-    type: stdio
-    command: npx
-    args:
-      - -y
-      - @modelcontextprotocol/server-puppeteer@latest
-    startup: false
 
 endpoints:
   custom:
