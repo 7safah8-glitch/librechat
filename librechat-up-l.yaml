@@ -41,19 +41,13 @@ mcpServers:
     args:
       - -y
       - "@upstash/context7-mcp@latest"
-
-  playwright:
-    command: npx
-    args:
-      - -y
-      - "@executeautomation/mcp-playwright"
     
   puppeteer:
     command: npx
     args:
       - -y
       - "@modelcontextprotocol/server-puppeteer"
-      
+  
 endpoints:
   custom:
     - name: "ATXP"
