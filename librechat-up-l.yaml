@@ -41,7 +41,7 @@ mcpServers:
 endpoints:
   custom:
     - name: "ATXP"
-      apiKey: "user_provided"
+      apiKey: "https://accounts.atxp.ai?connection_token=SsSLlbfrxWsO4r8peif5k&account_id=atxp_acct_3TmJwqerOZarYL5tkyEZr"
       baseURL: "https://llm.atxp.ai/v1"
       models:
         default:
