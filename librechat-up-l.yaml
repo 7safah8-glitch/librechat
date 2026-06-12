@@ -38,15 +38,13 @@ mcpServers:
       - mcp-server-time
     startup: false
     
-  context8:
+  playwright:
     type: stdio
     command: npx
     args:
       - -y
-      - @upstash/context7-mcp@latest
+      - @playwright/mcp@latest
     startup: false
-
-
 
 endpoints:
   custom:
