@@ -35,12 +35,13 @@ mcpServers:
     type: stdio
     command: uvx
     args:
-      - mcp-server-time
+      - y
+      - playwright/mcp@latest
     startup: false
     
   playwright:
     type: stdio
-    command: npx
+    command: uvx
     args:
       - -y
       - @playwright/mcp@latest
