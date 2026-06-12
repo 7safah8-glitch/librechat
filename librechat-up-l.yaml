@@ -47,6 +47,12 @@ mcpServers:
     args:
       - -y
       - "@modelcontextprotocol/server-puppeteer"
+      
+  playwright:
+    command: npx
+    args:
+      - -y
+      - "@executeautomation/mcp-playwright@latest"
   
 endpoints:
   custom:
