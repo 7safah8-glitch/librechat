@@ -47,7 +47,7 @@ mcpServers:
     args:
       - -y
       - "@executeautomation/mcp-playwright@latest"
-
+    
   puppeteer:
     command: npx
     args:
