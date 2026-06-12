@@ -46,14 +46,14 @@ mcpServers:
     command: npx
     args:
       - -y
-      - "@playwright/mcp@latest"
+      - "@executeautomation/mcp-playwright@latest"
 
   puppeteer:
     command: npx
     args:
       - -y
       - "@modelcontextprotocol/server-puppeteer"
-
+      
 endpoints:
   custom:
     - name: "ATXP"
