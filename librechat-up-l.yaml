@@ -29,23 +29,30 @@ registration:
     - "github"
     - "google"
     - "openid"
-
+    
 mcpServers:
   time:
-    type: stdio
     command: uvx
     args:
-      - y
-      - playwright/mcp@latest
-    startup: false
-    
-  playwright:
-    type: stdio
-    command: uvx
+      - mcp-server-time
+
+  context7:
+    command: npx
     args:
       - -y
-      - @playwright/mcp@latest
-    startup: false
+      - "@upstash/context7-mcp@latest"
+
+  playwright:
+    command: npx
+    args:
+      - -y
+      - "@playwright/mcp@latest"
+
+  puppeteer:
+    command: npx
+    args:
+      - -y
+      - "@modelcontextprotocol/server-puppeteer"
 
 endpoints:
   custom:
