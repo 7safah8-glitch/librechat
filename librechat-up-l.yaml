@@ -45,7 +45,7 @@ mcpServers:
   ddg-search:
     command: uvx
     args:
-      - duckduckgo-mcp-server
+      - "duckduckgo-mcp-server"
       
   one-search-mcp:
     command: npx
@@ -56,10 +56,6 @@ mcpServers:
       SEARCH_PROVIDER: searxng
       SEARCH_API_URL: http://127.0.0.1:8080
 
-  search-scrape:
-    command: /path/to/mcp-server/target/release/mcp-stdio
-    env:
-      SEARXNG_URL: http://localhost:8888
 
 endpoints:
   custom:
